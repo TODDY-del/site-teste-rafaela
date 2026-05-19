@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Imóveis à Venda em Igarapava-SP | Rafaela Requi Imóveis</title>
+  <meta name="description" content="Veja todos os imóveis à venda em Igarapava-SP com Rafaela Requi: casas, terrenos e imóveis comerciais. Filtre por tipo, preço e tamanho. Fale no WhatsApp." />
+  <meta name="keywords" content="imóveis à venda Igarapava SP, casas à venda Igarapava, terrenos à venda Igarapava, comprar imóvel Igarapava SP" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rafaelarequiimoveis.com.br/imoveis.html" />
+
+  <meta property="og:title" content="Imóveis à Venda em Igarapava-SP | Rafaela Requi" />
+  <meta property="og:description" content="Casas e terrenos à venda em Igarapava-SP. Atendimento pelo WhatsApp com Rafaela Requi, corretora CRECI-SP." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rafaelarequiimoveis.com.br/imoveis.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: { "gold": "#c5a059", "gold-dark": "#a8853e", "surface-2": "#1a1a1a" },
+          fontFamily: { serif: ["Bodoni Moda","serif"], sans: ["Hanken Grotesk","sans-serif"] },
+          maxWidth: { site: "1440px" },
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #0a0a0a; color: #fff; font-family: "Hanken Grotesk", sans-serif; overflow-x: hidden; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; font-family: 'Material Symbols Outlined'; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; justify-content: center; background: #25D366; color: #fff; padding: 14px; border-radius: 50%; text-decoration: none; box-shadow: 0 8px 30px rgba(37,211,102,0.35); transition: background 0.2s, transform 0.2s; }
+    .wa-float:hover { background: #1da851; transform: translateY(-2px); }
+    .wa-float svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
+
+    /* Filter chips */
+    .chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; border: 1px solid rgba(255,255,255,0.12);
+      font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+      cursor: pointer; transition: all 0.18s; color: rgba(255,255,255,0.5);
+      background: transparent; white-space: nowrap;
+    }
+    .chip:hover { border-color: #c5a059; color: #c5a059; }
+    .chip.active { border-color: #c5a059; background: rgba(197,160,89,0.12); color: #c5a059; }
+
+    /* Price range slider */
+    input[type=range] {
+      -webkit-appearance: none; width: 100%; height: 2px;
+      background: rgba(255,255,255,0.15); border-radius: 2px; outline: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none; width: 18px; height: 18px;
+      border-radius: 50%; background: #c5a059; cursor: pointer;
+      border: 2px solid #0a0a0a; box-shadow: 0 0 0 2px #c5a059;
+    }
+    input[type=range]::-moz-range-thumb {
+      width: 18px; height: 18px; border-radius: 50%;
+      background: #c5a059; cursor: pointer; border: 2px solid #0a0a0a;
+    }
+
+    /* Card hidden state */
+    .imovel-card { transition: opacity 0.25s, transform 0.25s; }
+    .imovel-card.hidden-card { display: none; }
+
+    /* Empty state */
+    #empty-state { display: none; }
+    #empty-state.visible { display: flex; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Imóveis à Venda em Igarapava-SP — Rafaela Requi",
+    "url": "https://rafaelarequiimoveis.com.br/imoveis.html",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Casa Residencial — Jardim América, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-1.html" },
+      { "@type": "ListItem", "position": 2, "name": "Casa Alto Padrão — Centro, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-2.html" },
+      { "@type": "ListItem", "position": 3, "name": "Terreno — Bairro Novo, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-3.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
+  <div class="flex justify-between items-center px-6 md:px-20 py-5 max-w-site mx-auto">
+    <a href="index.html">
+      <img src="logo_rafaela.png" alt="Rafaela Requi Imóveis" class="h-10 w-auto object-contain" />
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-[11px] font-semibold tracking-[0.12em] uppercase">
+      <a href="index.html" class="text-white/60 hover:text-gold transition-colors duration-200">Início</a>
+      <a href="sobre.html" class="text-white/60 hover:text-gold transition-colors duration-200">Sobre</a>
+      <a href="servicos.html" class="text-white/60 hover:text-gold transition-colors duration-200">Serviços</a>
+      <a href="imoveis.html" class="text-gold border-b border-gold pb-0.5">Imóveis</a>
+      <a href="contato.html" class="text-white/60 hover:text-gold transition-colors duration-200">Contato</a>
+    </div>
+    <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20vim%20pela%20página%20de%20imóveis%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.12em] uppercase px-6 py-3 hover:bg-gold-dark transition-colors duration-200">
+      Falar no WhatsApp
+    </a>
+    <button id="hamburger" class="md:hidden text-white" aria-label="Menu">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="flex-col bg-black border-t border-white/5 px-6 py-6 gap-5 text-[12px] font-semibold tracking-[0.12em] uppercase md:hidden">
+    <a href="index.html" class="text-white/60">Início</a>
+    <a href="sobre.html" class="text-white/60">Sobre</a>
+    <a href="servicos.html" class="text-white/60">Serviços</a>
+    <a href="imoveis.html" class="text-gold">Imóveis</a>
+    <a href="contato.html" class="text-white/60">Contato</a>
+    <a href="https://wa.me/5516999999999" target="_blank" rel="noopener" class="inline-block bg-gold text-black px-5 py-3 mt-2">Falar no WhatsApp</a>
+  </div>
+</nav>
+
+<main class="pt-32 pb-24 min-h-screen">
+  <div class="max-w-site mx-auto px-6 md:px-20">
+
+    <!-- Header -->
+    <div class="mb-12">
+      <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-3 block">Portfólio</span>
+      <h1 class="font-serif text-4xl md:text-6xl text-white mb-4">Imóveis disponíveis</h1>
+      <p class="text-white/50 text-base max-w-xl">
+        Todos os imóveis à venda em Igarapava-SP. Use os filtros para encontrar o que você procura.
+      </p>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="bg-surface-2 border border-white/5 p-6 md:p-8 mb-10 flex flex-col gap-7">
+
+      <!-- Linha 1: Tipo + Quartos -->
+      <div class="flex flex-col md:flex-row gap-6">
+
+        <!-- Tipo -->
+        <div class="flex flex-col gap-3 flex-1">
+          <span class="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase">Tipo de imóvel</span>
+          <div class="flex flex-wrap gap-2" id="filter-tipo">
+            <button class="chip active" data-value="todos">Todos</button>
+            <button class="chip" data-value="casa">
+              <span class="material-symbols-outlined text-[14px]">home</span> Casa
+            </button>
+            <button class="chip" data-value="terreno">
+              <span class="material-symbols-outlined text-[14px]">terrain</span> Terreno
+            </button>
+          </div>
+        </div>
+
+        <!-- Quartos -->
+        <div class="flex flex-col gap-3 flex-1">
+          <span class="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase">Quartos</span>
+          <div class="flex flex-wrap gap-2" id="filter-quartos">
+            <button class="chip active" data-value="todos">Todos</button>
+            <button class="chip" data-value="1-2">1–2 quartos</button>
+            <button class="chip" data-value="3">3 quartos</button>
+            <button class="chip" data-value="4">4+ quartos</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Linha 2: Preço slider -->
+      <div class="flex flex-col gap-3">
+        <div class="flex justify-between items-center">
+          <span class="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase">Preço máximo</span>
+          <span id="price-label" class="text-white font-semibold text-sm">R$ 700.000</span>
+        </div>
+        <input type="range" id="price-slider" min="100000" max="700000" step="50000" value="700000" />
+        <div class="flex justify-between text-white/30 text-xs">
+          <span>R$ 100.000</span>
+          <span>R$ 700.000</span>
+        </div>
+      </div>
+
+      <!-- Linha 3: Área slider -->
+      <div class="flex flex-col gap-3">
+        <div class="flex justify-between items-center">
+          <span class="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase">Área mínima</span>
+          <span id="area-label" class="text-white font-semibold text-sm">0 m²</span>
+        </div>
+        <input type="range" id="area-slider" min="0" max="500" step="50" value="0" />
+        <div class="flex justify-between text-white/30 text-xs">
+          <span>0 m²</span>
+          <span>500 m²</span>
+        </div>
+      </div>
+
+      <!-- Linha 4: Botão limpar -->
+      <div class="flex items-center justify-between pt-1 border-t border-white/5">
+        <span id="result-count" class="text-white/40 text-sm">3 imóveis encontrados</span>
+        <button id="clear-filters" class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 hover:text-gold-dark transition-colors">
+          <span class="material-symbols-outlined text-sm">restart_alt</span>
+          Limpar filtros
+        </button>
+      </div>
+    </div>
+
+    <!-- GRID DE IMÓVEIS -->
+    <div id="imoveis-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Imóvel 1 -->
+      <a href="imovel-1.html"
+         class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
+         data-tipo="casa"
+         data-quartos="3"
+         data-preco="380000"
+         data-area="180">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80&auto=format&fit=crop"
+               alt="Casa residencial à venda Jardim América Igarapava SP"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+          <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold tracking-[0.1em] uppercase px-3 py-1 flex items-center gap-1">
+            <span class="material-symbols-outlined text-gold text-[13px]">home</span> Casa
+          </div>
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <div>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Residencial — Jardim América</h2>
+            <p class="text-white/45 text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
+              Jardim América · Igarapava, SP
+            </p>
+          </div>
+          <!-- Specs -->
+          <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">straighten</span> 180 m²</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 3 quartos</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shower</span> 2 banheiros</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_car</span> 2 vagas</span>
+          </div>
+          <!-- Preço + CTA -->
+          <div class="flex items-center justify-between mt-1">
+            <span class="font-serif text-2xl text-gold">R$ 380.000</span>
+            <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+              Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Imóvel 2 -->
+      <a href="imovel-2.html"
+         class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
+         data-tipo="casa"
+         data-quartos="4"
+         data-preco="620000"
+         data-area="280">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80&auto=format&fit=crop"
+               alt="Casa alto padrão à venda Centro Igarapava SP"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+          <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold tracking-[0.1em] uppercase px-3 py-1 flex items-center gap-1">
+            <span class="material-symbols-outlined text-gold text-[13px]">home</span> Casa
+          </div>
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <div>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Alto Padrão — Centro</h2>
+            <p class="text-white/45 text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
+              Centro · Igarapava, SP
+            </p>
+          </div>
+          <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">straighten</span> 280 m²</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 4 quartos</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shower</span> 3 banheiros</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_car</span> 3 vagas</span>
+          </div>
+          <div class="flex items-center justify-between mt-1">
+            <span class="font-serif text-2xl text-gold">R$ 620.000</span>
+            <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+              Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Imóvel 3 -->
+      <a href="imovel-3.html"
+         class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
+         data-tipo="terreno"
+         data-quartos="0"
+         data-preco="145000"
+         data-area="500">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80&auto=format&fit=crop"
+               alt="Terreno à venda Bairro Novo Igarapava SP"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+          <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold tracking-[0.1em] uppercase px-3 py-1 flex items-center gap-1">
+            <span class="material-symbols-outlined text-gold text-[13px]">terrain</span> Terreno
+          </div>
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <div>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Terreno — Bairro Novo</h2>
+            <p class="text-white/45 text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
+              Bairro Novo · Igarapava, SP
+            </p>
+          </div>
+          <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">straighten</span> 500 m²</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">width</span> 20 × 25 m</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">terrain</span> Plano</span>
+          </div>
+          <div class="flex items-center justify-between mt-1">
+            <span class="font-serif text-2xl text-gold">R$ 145.000</span>
+            <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+              Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div><!-- /grid -->
+
+    <!-- Empty state -->
+    <div id="empty-state" class="flex-col items-center justify-center text-center py-24 gap-5">
+      <span class="material-symbols-outlined text-white/15 text-7xl">search_off</span>
+      <p class="font-serif text-2xl text-white/40">Nenhum imóvel encontrado</p>
+      <p class="text-white/30 text-sm max-w-xs">Tente ajustar os filtros ou entre em contato para verificar novos imóveis disponíveis.</p>
+      <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20não%20encontrei%20o%20imóvel%20que%20procuro%20no%20site.%20Você%20tem%20mais%20opções%3F"
+         target="_blank" rel="noopener"
+         class="mt-2 inline-flex items-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.15em] uppercase px-7 py-3 hover:bg-gold-dark transition-colors duration-200">
+        Perguntar sobre mais imóveis
+      </a>
+    </div>
+
+    <!-- CTA inferior -->
+    <div class="mt-20 bg-surface-2 border border-white/5 p-8 md:p-12 flex flex-col md:flex-row items-center md:items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <h2 class="font-serif text-2xl text-white mb-2">Não encontrou o que procura?</h2>
+        <p class="text-white/50 text-sm max-w-lg">Me conta o perfil do imóvel ideal para você e eu te aviso assim que surgir uma oportunidade em Igarapava-SP.</p>
+      </div>
+      <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20estou%20procurando%20um%20imóvel%20em%20Igarapava%20e%20não%20encontrei%20no%20site.%20Pode%20me%20ajudar%3F"
+         target="_blank" rel="noopener"
+         class="flex-shrink-0 inline-flex items-center gap-3 bg-gold text-black text-[11px] font-semibold tracking-[0.15em] uppercase px-8 py-4 hover:bg-gold-dark transition-colors duration-200">
+        <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.529 5.843L.057 23.776a.5.5 0 00.609.63l6.101-1.597A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.956 9.956 0 01-5.121-1.408l-.367-.218-3.802.996.998-3.702-.24-.383A9.965 9.965 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Falar com a Rafaela
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-white/5 py-16 px-6 md:px-20">
+  <div class="max-w-site mx-auto flex flex-col items-center text-center gap-8">
+    <img src="logo_rafaela.png" alt="Rafaela Requi Imóveis" class="h-12 w-auto object-contain opacity-80" />
+    <div class="flex flex-wrap justify-center gap-6 text-[11px] font-semibold tracking-[0.1em] uppercase text-white/40">
+      <a href="index.html" class="hover:text-gold transition-colors">Início</a>
+      <a href="sobre.html" class="hover:text-gold transition-colors">Sobre</a>
+      <a href="servicos.html" class="hover:text-gold transition-colors">Serviços</a>
+      <a href="imoveis.html" class="hover:text-gold transition-colors">Imóveis</a>
+      <a href="contato.html" class="hover:text-gold transition-colors">Contato</a>
+      <a href="https://wa.me/5516999999999" target="_blank" rel="noopener" class="hover:text-gold transition-colors">WhatsApp</a>
+    </div>
+    <p class="text-white/25 text-xs">Rafaela Requi Imóveis — Igarapava, SP · CRECI-SP<br/>© 2025 Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20vim%20pela%20página%20de%20imóveis%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.529 5.843L.057 23.776a.5.5 0 00.609.63l6.101-1.597A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.956 9.956 0 01-5.121-1.408l-.367-.218-3.802.996.998-3.702-.24-.383A9.965 9.965 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+  // --- Hamburger ---
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+
+  // --- Filtros ---
+  const cards = document.querySelectorAll('.imovel-card');
+  const emptyState = document.getElementById('empty-state');
+  const resultCount = document.getElementById('result-count');
+
+  let activeFilters = { tipo: 'todos', quartos: 'todos', preco: 700000, area: 0 };
+
+  function formatPrice(val) {
+    return 'R$ ' + Number(val).toLocaleString('pt-BR');
+  }
+
+  function applyFilters() {
+    let visible = 0;
+    cards.forEach(card => {
+      const tipo    = card.dataset.tipo;
+      const quartos = parseInt(card.dataset.quartos);
+      const preco   = parseInt(card.dataset.preco);
+      const area    = parseInt(card.dataset.area);
+
+      const tipoOk = activeFilters.tipo === 'todos' || tipo === activeFilters.tipo;
+
+      let quartosOk = true;
+      if (activeFilters.quartos === '1-2') quartosOk = quartos >= 1 && quartos <= 2;
+      else if (activeFilters.quartos === '3')  quartosOk = quartos === 3;
+      else if (activeFilters.quartos === '4')  quartosOk = quartos >= 4;
+
+      const precoOk = preco <= activeFilters.preco;
+      const areaOk  = area >= activeFilters.area;
+
+      const show = tipoOk && quartosOk && precoOk && areaOk;
+      card.classList.toggle('hidden-card', !show);
+      if (show) visible++;
+    });
+
+    resultCount.textContent = visible + (visible === 1 ? ' imóvel encontrado' : ' imóveis encontrados');
+    emptyState.classList.toggle('visible', visible === 0);
+  }
+
+  // Chips de tipo
+  document.getElementById('filter-tipo').addEventListener('click', function(e) {
+    const btn = e.target.closest('.chip');
+    if (!btn) return;
+    this.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters.tipo = btn.dataset.value;
+    applyFilters();
+  });
+
+  // Chips de quartos
+  document.getElementById('filter-quartos').addEventListener('click', function(e) {
+    const btn = e.target.closest('.chip');
+    if (!btn) return;
+    this.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters.quartos = btn.dataset.value;
+    applyFilters();
+  });
+
+  // Slider de preço
+  const priceSlider = document.getElementById('price-slider');
+  const priceLabel  = document.getElementById('price-label');
+  priceSlider.addEventListener('input', function() {
+    activeFilters.preco = parseInt(this.value);
+    priceLabel.textContent = formatPrice(this.value);
+    applyFilters();
+  });
+
+  // Slider de área
+  const areaSlider = document.getElementById('area-slider');
+  const areaLabel  = document.getElementById('area-label');
+  areaSlider.addEventListener('input', function() {
+    activeFilters.area = parseInt(this.value);
+    areaLabel.textContent = this.value + ' m²';
+    applyFilters();
+  });
+
+  // Limpar filtros
+  document.getElementById('clear-filters').addEventListener('click', function() {
+    activeFilters = { tipo: 'todos', quartos: 'todos', preco: 700000, area: 0 };
+
+    document.querySelectorAll('#filter-tipo .chip, #filter-quartos .chip').forEach(c => {
+      c.classList.toggle('active', c.dataset.value === 'todos');
+    });
+
+    priceSlider.value = 700000;
+    priceLabel.textContent = 'R$ 700.000';
+    areaSlider.value = 0;
+    areaLabel.textContent = '0 m²';
+
+    applyFilters();
+  });
+
+  // Inicializa contagem
+  applyFilters();
+</script>
+</body>
+</html>

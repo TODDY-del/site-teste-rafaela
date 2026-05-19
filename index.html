@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Rafaela Requi Imóveis | Corretora de Imóveis em Igarapava-SP</title>
+  <meta name="description" content="Rafaela Requi — Corretora de imóveis em Igarapava-SP especializada em compra e venda de imóveis residenciais e comerciais. Atendimento personalizado, negociação segura e resultado garantido. Fale no WhatsApp." />
+  <meta name="keywords" content="corretora de imóveis Igarapava, imóveis Igarapava SP, compra de imóveis Igarapava, venda de imóveis Igarapava, Rafaela Requi corretora, imobiliária Igarapava" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rafaelarequiimoveis.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rafaela Requi Imóveis | Corretora em Igarapava-SP" />
+  <meta property="og:description" content="Compra e venda de imóveis em Igarapava-SP com atendimento personalizado e resultado garantido." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rafaelarequiimoveis.com.br/" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "gold": "#c5a059",
+            "gold-dark": "#a8853e",
+            "surface": "#121212",
+            "surface-2": "#1a1a1a",
+            "surface-3": "#222222",
+            "on-surface": "#ffffff",
+            "on-surface-muted": "rgba(255,255,255,0.65)",
+            "border-subtle": "rgba(255,255,255,0.08)",
+          },
+          fontFamily: {
+            serif: ["Bodoni Moda", "serif"],
+            sans: ["Hanken Grotesk", "sans-serif"],
+          },
+          maxWidth: { site: "1440px" },
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #0a0a0a; color: #fff; font-family: "Hanken Grotesk", sans-serif; overflow-x: hidden; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; font-family: 'Material Symbols Outlined'; }
+    .font-serif { font-family: "Bodoni Moda", serif; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+    /* WhatsApp float */
+    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; justify-content: center; background: #25D366; color: #fff; padding: 14px; border-radius: 50%; text-decoration: none; box-shadow: 0 8px 30px rgba(37,211,102,0.35); transition: background 0.2s, transform 0.2s; }
+    .wa-float:hover { background: #1da851; transform: translateY(-2px); }
+    .wa-float svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Rafaela Requi Imóveis",
+    "description": "Corretora de imóveis especializada em compra e venda de imóveis residenciais e comerciais em Igarapava-SP e região.",
+    "url": "https://rafaelarequiimoveis.com.br",
+    "telephone": "+55-16-99999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Igarapava",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-20.0381",
+      "longitude": "-47.7578"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Igarapava",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "São Paulo"
+      }
+    },
+    "priceRange": "$$",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
+  <div class="flex justify-between items-center px-6 md:px-20 py-5 max-w-site mx-auto">
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="logo_rafaela.png" alt="Rafaela Requi Imóveis" class="h-10 w-auto object-contain" />
+    </a>
+    <!-- Desktop nav -->
+    <div class="hidden md:flex items-center gap-8 text-[11px] font-semibold tracking-[0.12em] uppercase">
+      <a href="index.html" class="text-gold border-b border-gold pb-0.5">Início</a>
+      <a href="sobre.html" class="text-white/60 hover:text-gold transition-colors duration-200">Sobre</a>
+      <a href="servicos.html" class="text-white/60 hover:text-gold transition-colors duration-200">Serviços</a>
+      <a href="imoveis.html" class="text-white/60 hover:text-gold transition-colors duration-200">Imóveis</a>
+      <a href="contato.html" class="text-white/60 hover:text-gold transition-colors duration-200">Contato</a>
+    </div>
+    <!-- Desktop CTA -->
+    <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20imóveis." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.12em] uppercase px-6 py-3 hover:bg-gold-dark transition-colors duration-200">
+      Falar no WhatsApp
+    </a>
+    <!-- Hamburger -->
+    <button id="hamburger" class="md:hidden text-white" aria-label="Menu">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="flex-col bg-black border-t border-white/5 px-6 py-6 gap-5 text-[12px] font-semibold tracking-[0.12em] uppercase md:hidden">
+    <a href="index.html" class="text-gold">Início</a>
+    <a href="sobre.html" class="text-white/60">Sobre</a>
+    <a href="servicos.html" class="text-white/60">Serviços</a>
+    <a href="imoveis.html" class="text-white/60">Imóveis</a>
+    <a href="contato.html" class="text-white/60">Contato</a>
+    <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20imóveis." target="_blank" rel="noopener" class="inline-block bg-gold text-black px-5 py-3 mt-2">Falar no WhatsApp</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <!-- Imagem do wireframe original (mansão noturna de luxo) -->
+    <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsZ2eVGwFEqcuEXUd7PLwgbTIrPx7-BoA5TzJ6wr3FAQiHOS8qa10QBDPpeQnXgmLB1WKGMAVxJqh8xN-pBOhMcdR8Ygilp6MKMz2oTICfYOOTH3LcvaEJICDWmyWKOUukpCwzFC-CunrrNJ1j-51Fnt2r-GGTq-AiRs-9ZxNakgjt5KZjM4ccu4huikgWxpGs6J0E80_MtPLop7gM_oCClAdxdcqWrJX06hNw4XL0w93W3TZEQMn0PJaVsef-gKrib8MTPQYOzAn_');"></div>
+    <div class="absolute inset-0 bg-black/70 mix-blend-multiply"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(10,8,4,1) 0%, transparent 60%);"></div>
+  </div>
+  <div class="relative z-20 text-center px-6 md:px-20 max-w-5xl mx-auto flex flex-col items-center">
+    <span class="text-gold text-[11px] font-semibold tracking-[0.25em] uppercase mb-6 block">Igarapava · São Paulo</span>
+    <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+      Seu próximo imóvel,<br/>
+      <em class="text-gold not-italic">realizado com cuidado.</em>
+    </h1>
+    <p class="text-white/60 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+      Compra e venda de imóveis em Igarapava-SP e região com atendimento personalizado, negociação transparente e total segurança no processo.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+      <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20quero%20encontrar%20um%20imóvel%20em%20Igarapava." target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.15em] uppercase px-8 py-4 hover:bg-gold-dark transition-colors duration-200">
+        <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.529 5.843L.057 23.776a.5.5 0 00.609.63l6.101-1.597A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.956 9.956 0 01-5.121-1.408l-.367-.218-3.802.996.998-3.702-.24-.383A9.965 9.965 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Quero comprar um imóvel
+      </a>
+      <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20quero%20vender%20meu%20imóvel%20em%20Igarapava." target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 border border-gold text-gold text-[11px] font-semibold tracking-[0.15em] uppercase px-8 py-4 hover:bg-gold/10 transition-colors duration-200">
+        Quero vender meu imóvel
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- APRESENTAÇÃO / SOBRE -->
+<section class="py-28 px-6 md:px-20 max-w-site mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+    <div class="md:col-span-5 relative">
+      <div class="w-full aspect-[4/5] bg-surface-2 border border-white/5 flex items-center justify-center relative overflow-hidden">
+        <img src="../imagem_rafaela.png" alt="Rafaela Requi Corretora de Imóveis Igarapava SP" class="w-2/3 object-contain opacity-90" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+      </div>
+      <div class="absolute -bottom-5 -right-5 w-28 h-28 border border-gold/25 -z-10"></div>
+      <div class="absolute -top-5 -left-5 w-16 h-16 border border-gold/15 -z-10"></div>
+    </div>
+    <div class="md:col-span-6 md:col-start-7 flex flex-col gap-5">
+      <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase">Sobre a Corretora</span>
+      <h2 class="font-serif text-3xl md:text-5xl text-white leading-tight">
+        Especialista em imóveis em Igarapava&#8209;SP
+      </h2>
+      <div class="w-10 h-px bg-gold my-2"></div>
+      <p class="text-white/60 text-base leading-relaxed">
+        Rafaela Requi é corretora de imóveis credenciada pelo CRECI, atuando em Igarapava e região com foco em intermediação de compra e venda de imóveis residenciais e comerciais.
+      </p>
+      <p class="text-white/60 text-base leading-relaxed">
+        Com atendimento próximo, transparente e totalmente personalizado, acompanha cada cliente do primeiro contato à entrega das chaves — tornando o processo seguro e sem complicações.
+      </p>
+      <a href="sobre.html" class="mt-4 self-start text-[11px] font-semibold tracking-[0.15em] uppercase border border-gold text-gold px-7 py-3 hover:bg-gold/10 transition-colors duration-200">
+        Conheça mais
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- IMÓVEIS EM DESTAQUE -->
+<section class="py-28 px-6 md:px-20 bg-surface-2 border-y border-white/5">
+  <div class="max-w-site mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14">
+      <div>
+        <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-3 block">Portfólio</span>
+        <h2 class="font-serif text-3xl md:text-5xl text-white">Imóveis disponíveis</h2>
+      </div>
+      <a href="imoveis.html" class="self-start md:self-auto text-gold text-[11px] font-semibold tracking-[0.15em] uppercase flex items-center gap-1 hover:gap-3 transition-all duration-200">
+        Ver todos <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Grid: card grande + 2 pequenos -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+      <!-- Card 1 — destaque -->
+      <a href="imovel-1.html" class="md:col-span-7 group block relative overflow-hidden">
+        <div class="relative aspect-[16/10] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop"
+               alt="Casa residencial à venda em Igarapava SP"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <h3 class="font-serif text-2xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Residencial — Jardim América</h3>
+            <p class="text-white/60 text-sm flex items-center gap-1 mb-3">
+              <span class="material-symbols-outlined text-gold text-base">location_on</span>
+              Igarapava, SP
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="font-serif text-xl text-gold">R$ 380.000</span>
+              <span class="text-white/50 text-xs">3 quartos · 180 m²</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Cards 2 e 3 -->
+      <div class="md:col-span-5 flex flex-col gap-6">
+
+        <a href="imovel-2.html" class="group block relative overflow-hidden">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80&auto=format&fit=crop"
+                 alt="Casa de alto padrão à venda Igarapava SP"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+            <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <h3 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Alto Padrão — Centro</h3>
+              <div class="flex items-center justify-between">
+                <span class="font-serif text-lg text-gold">R$ 620.000</span>
+                <span class="text-white/50 text-xs">4 quartos · 280 m²</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="imovel-3.html" class="group block relative overflow-hidden">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80&auto=format&fit=crop"
+                 alt="Terreno à venda Igarapava SP"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+            <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <h3 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Terreno — Bairro Novo</h3>
+              <div class="flex items-center justify-between">
+                <span class="font-serif text-lg text-gold">R$ 145.000</span>
+                <span class="text-white/50 text-xs">500 m²</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="bg-surface-2 py-24 px-6 md:px-20 border-y border-white/5">
+  <div class="max-w-site mx-auto">
+    <div class="text-center mb-14">
+      <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-3 block">Por que escolher</span>
+      <h2 class="font-serif text-3xl md:text-5xl text-white">Atendimento que faz a diferença</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-[#121212] border border-white/5 hover:border-gold/30 transition-colors duration-300 p-8 group">
+        <span class="material-symbols-outlined text-gold text-4xl mb-5 block">handshake</span>
+        <h3 class="font-serif text-xl text-white mb-3">Atendimento Personalizado</h3>
+        <p class="text-white/55 text-sm leading-relaxed">Cada cliente tem um perfil único. Busco imóveis que realmente combinam com sua vida e seu orçamento em Igarapava-SP.</p>
+      </div>
+      <div class="bg-[#121212] border border-white/5 hover:border-gold/30 transition-colors duration-300 p-8 group">
+        <span class="material-symbols-outlined text-gold text-4xl mb-5 block">verified</span>
+        <h3 class="font-serif text-xl text-white mb-3">Processo Seguro e Legal</h3>
+        <p class="text-white/55 text-sm leading-relaxed">Toda negociação com documentação verificada, suporte jurídico e transparência total — você compra ou vende com tranquilidade.</p>
+      </div>
+      <div class="bg-[#121212] border border-white/5 hover:border-gold/30 transition-colors duration-300 p-8 group">
+        <span class="material-symbols-outlined text-gold text-4xl mb-5 block">location_on</span>
+        <h3 class="font-serif text-xl text-white mb-3">Conhecimento Local</h3>
+        <p class="text-white/55 text-sm leading-relaxed">Moradora de Igarapava, conheço cada bairro, cada rua e as melhores oportunidades do mercado imobiliário local.</p>
+      </div>
+      <div class="bg-[#121212] border border-white/5 hover:border-gold/30 transition-colors duration-300 p-8 group">
+        <span class="material-symbols-outlined text-gold text-4xl mb-5 block">schedule</span>
+        <h3 class="font-serif text-xl text-white mb-3">Agilidade na Negociação</h3>
+        <p class="text-white/55 text-sm leading-relaxed">Sem burocracia desnecessária. Do primeiro contato ao fechamento, o processo é ágil, direto e eficiente.</p>
+      </div>
+      <div class="bg-[#121212] border border-white/5 hover:border-gold/30 transition-colors duration-300 p-8 group">
+        <span class="material-symbols-outlined text-gold text-4xl mb-5 block">real_estate_agent</span>
+        <h3 class="font-serif text-xl text-white mb-3">CRECI Ativo</h3>
+        <p class="text-white/55 text-sm leading-relaxed">Credenciada pelo Conselho Regional de Corretores de Imóveis de São Paulo, garantindo sua segurança em cada transação.</p>
+      </div>
+      <div class="bg-[#121212] border border-white/5 hover:border-gold/30 transition-colors duration-300 p-8 group">
+        <span class="material-symbols-outlined text-gold text-4xl mb-5 block">support_agent</span>
+        <h3 class="font-serif text-xl text-white mb-3">Suporte pelo WhatsApp</h3>
+        <p class="text-white/55 text-sm leading-relaxed">Atendimento rápido e humano direto pelo WhatsApp — tire dúvidas, agende visitas e acompanhe tudo em tempo real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS RÁPIDO -->
+<section class="py-28 px-6 md:px-20 max-w-site mx-auto">
+  <div class="text-center mb-14">
+    <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-3 block">O que eu faço</span>
+    <h2 class="font-serif text-3xl md:text-5xl text-white">Serviços imobiliários em Igarapava</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/5">
+    <div class="border-b md:border-b-0 md:border-r border-white/5 p-10 hover:bg-surface-2 transition-colors duration-200 group">
+      <span class="material-symbols-outlined text-gold text-3xl mb-5 block">vpn_key</span>
+      <h3 class="font-serif text-2xl text-white mb-3">Compra de Imóveis</h3>
+      <p class="text-white/55 text-sm leading-relaxed mb-5">Encontro o imóvel certo para você em Igarapava-SP. Casas, apartamentos, terrenos e imóveis comerciais.</p>
+      <a href="servicos.html" class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        Saiba mais <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+    <div class="border-b md:border-b-0 md:border-r border-white/5 p-10 hover:bg-surface-2 transition-colors duration-200 group">
+      <span class="material-symbols-outlined text-gold text-3xl mb-5 block">sell</span>
+      <h3 class="font-serif text-2xl text-white mb-3">Venda de Imóveis</h3>
+      <p class="text-white/55 text-sm leading-relaxed mb-5">Vendo seu imóvel com divulgação ampla, avaliação justa e negociação profissional para o melhor resultado.</p>
+      <a href="servicos.html" class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        Saiba mais <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+    <div class="p-10 hover:bg-surface-2 transition-colors duration-200 group">
+      <span class="material-symbols-outlined text-gold text-3xl mb-5 block">calculate</span>
+      <h3 class="font-serif text-2xl text-white mb-3">Avaliação de Imóveis</h3>
+      <p class="text-white/55 text-sm leading-relaxed mb-5">Descubra o valor real do seu imóvel em Igarapava com uma avaliação criteriosa e fundamentada no mercado local.</p>
+      <a href="servicos.html" class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        Saiba mais <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+  <div class="text-center mt-8">
+    <a href="servicos.html" class="inline-flex items-center gap-2 text-gold text-[11px] font-semibold tracking-[0.15em] uppercase border border-gold/40 px-7 py-3 hover:border-gold hover:bg-gold/5 transition-colors duration-200">
+      Ver todos os serviços <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="bg-surface-2 py-24 px-6 md:px-20 border-y border-white/5">
+  <div class="max-w-site mx-auto">
+    <div class="text-center mb-14">
+      <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-3 block">Processo</span>
+      <h2 class="font-serif text-3xl md:text-5xl text-white">Como funciona</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center text-center group">
+        <div class="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mb-5 group-hover:bg-gold/10 transition-colors duration-300">
+          <span class="font-serif text-2xl text-gold">01</span>
+        </div>
+        <h3 class="font-serif text-xl text-white mb-2">Primeiro Contato</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Me conta o que você precisa pelo WhatsApp — sem compromisso e sem pressa.</p>
+      </div>
+      <div class="flex flex-col items-center text-center group">
+        <div class="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mb-5 group-hover:bg-gold/10 transition-colors duration-300">
+          <span class="font-serif text-2xl text-gold">02</span>
+        </div>
+        <h3 class="font-serif text-xl text-white mb-2">Busca Personalizada</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Seleciono imóveis em Igarapava que realmente atendem seu perfil e orçamento.</p>
+      </div>
+      <div class="flex flex-col items-center text-center group">
+        <div class="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mb-5 group-hover:bg-gold/10 transition-colors duration-300">
+          <span class="font-serif text-2xl text-gold">03</span>
+        </div>
+        <h3 class="font-serif text-xl text-white mb-2">Visitas e Avaliação</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Agendamos visitas nos imóveis certos com toda orientação técnica e documental.</p>
+      </div>
+      <div class="flex flex-col items-center text-center group">
+        <div class="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mb-5 group-hover:bg-gold/10 transition-colors duration-300">
+          <span class="font-serif text-2xl text-gold">04</span>
+        </div>
+        <h3 class="font-serif text-xl text-white mb-2">Fechamento Seguro</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Negociação, documentação e entrega das chaves — com segurança e tranquilidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTO -->
+<section class="py-28 px-6 md:px-20 max-w-site mx-auto">
+  <div class="text-center mb-14">
+    <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-3 block">Depoimentos</span>
+    <h2 class="font-serif text-3xl md:text-5xl text-white">O que dizem os clientes</h2>
+  </div>
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center flex flex-col items-center px-4 md:px-16">
+      <span class="material-symbols-outlined text-gold/20 text-7xl mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+      <p class="font-serif text-xl md:text-2xl text-white/75 italic mb-8 leading-relaxed">
+        "A Rafaela me ajudou a encontrar a casa que eu procurava há meses em Igarapava. Ela entendeu exatamente o que eu queria e tornou o processo muito mais simples do que eu esperava."
+      </p>
+      <span class="font-serif text-lg text-white block mb-1">M. S.</span>
+      <span class="text-gold text-[10px] font-semibold tracking-[0.15em] uppercase">Compradora — Igarapava-SP</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-surface-2 py-24 px-6 md:px-20 border-y border-white/5">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-3 block">Dúvidas Frequentes</span>
+      <h2 class="font-serif text-3xl md:text-4xl text-white">FAQ</h2>
+    </div>
+    <div class="flex flex-col gap-3">
+      <details class="bg-[#121212] border border-white/5 group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer text-white font-semibold text-base list-none">
+          Atende imóveis em quais cidades?
+          <span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform duration-200">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-white/55 text-sm leading-relaxed">
+          Atendo principalmente em Igarapava-SP e municípios da região, como Rifaina, Pedregulho, Capitólio e cidades próximas do Triângulo Mineiro. Entre em contato para confirmar sua cidade.
+        </div>
+      </details>
+      <details class="bg-[#121212] border border-white/5 group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer text-white font-semibold text-base list-none">
+          Qual o custo de contratar uma corretora?
+          <span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform duration-200">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-white/55 text-sm leading-relaxed">
+          A comissão da corretora é paga somente no fechamento do negócio, conforme tabela do CRECI-SP. Não há custo antecipado para busca ou avaliação inicial.
+        </div>
+      </details>
+      <details class="bg-[#121212] border border-white/5 group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer text-white font-semibold text-base list-none">
+          Como avalio o preço do meu imóvel?
+          <span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform duration-200">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-white/55 text-sm leading-relaxed">
+          Faço uma avaliação completa levando em conta localização, metragem, estado de conservação e comparativos de mercado em Igarapava. Entre em contato pelo WhatsApp para agendar.
+        </div>
+      </details>
+      <details class="bg-[#121212] border border-white/5 group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer text-white font-semibold text-base list-none">
+          Consigo financiamento pelo banco?
+          <span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform duration-200">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-white/55 text-sm leading-relaxed">
+          Sim! Auxilio na orientação para financiamento imobiliário (Caixa, Banco do Brasil e outros), verificando documentação e simulando as melhores condições para o seu perfil.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-32 px-6 md:px-20 text-center relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.03]" style="background: radial-gradient(ellipse at center, #c5a059 0%, transparent 70%);"></div>
+  <div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center gap-6">
+    <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase">Pronto para dar o próximo passo?</span>
+    <h2 class="font-serif text-3xl md:text-5xl text-white leading-tight">
+      Fale comigo agora pelo WhatsApp
+    </h2>
+    <p class="text-white/55 text-base max-w-lg">
+      Atendimento rápido e sem compromisso. Conte o que você procura e eu te ajudo a encontrar o imóvel ideal em Igarapava-SP.
+    </p>
+    <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20imóveis%20em%20Igarapava." target="_blank" rel="noopener"
+       class="inline-flex items-center gap-3 bg-gold text-black text-[11px] font-semibold tracking-[0.15em] uppercase px-8 py-4 hover:bg-gold-dark transition-colors duration-200 mt-2">
+      <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.529 5.843L.057 23.776a.5.5 0 00.609.63l6.101-1.597A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.956 9.956 0 01-5.121-1.408l-.367-.218-3.802.996.998-3.702-.24-.383A9.965 9.965 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Iniciar conversa no WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-white/5 py-16 px-6 md:px-20">
+  <div class="max-w-site mx-auto flex flex-col items-center text-center gap-8">
+    <img src="logo_rafaela.png" alt="Rafaela Requi Imóveis Igarapava SP" class="h-12 w-auto object-contain opacity-80" />
+    <div class="flex flex-wrap justify-center gap-6 text-[11px] font-semibold tracking-[0.1em] uppercase text-white/40">
+      <a href="index.html" class="hover:text-gold transition-colors">Início</a>
+      <a href="sobre.html" class="hover:text-gold transition-colors">Sobre</a>
+      <a href="servicos.html" class="hover:text-gold transition-colors">Serviços</a>
+      <a href="contato.html" class="hover:text-gold transition-colors">Contato</a>
+      <a href="https://wa.me/5516999999999" target="_blank" rel="noopener" class="hover:text-gold transition-colors">WhatsApp</a>
+    </div>
+    <p class="text-white/25 text-xs">
+      Rafaela Requi Imóveis — Igarapava, SP · CRECI-SP<br/>
+      © 2025 Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.529 5.843L.057 23.776a.5.5 0 00.609.63l6.101-1.597A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.956 9.956 0 01-5.121-1.408l-.367-.218-3.802.996.998-3.702-.24-.383A9.965 9.965 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
