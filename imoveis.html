@@ -36,8 +36,12 @@
     * { box-sizing: border-box; }
     body { background: #0a0a0a; color: #fff; font-family: "Hanken Grotesk", sans-serif; overflow-x: hidden; }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; font-family: 'Material Symbols Outlined'; }
-    #mobile-menu { display: none; }
-    #mobile-menu.open { display: flex; }
+    /* Drawer overlay */
+    #drawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:998;opacity:0;pointer-events:none;transition:opacity 0.35s ease;}
+    #drawer-overlay.open{opacity:1;pointer-events:all;}
+    /* Drawer panel */
+    #mobile-menu{position:fixed;top:0;right:0;height:100%;width:min(320px,85vw);background:#0d0d0d;border-left:1px solid rgba(255,255,255,0.07);z-index:999;display:flex;flex-direction:column;transform:translateX(100%);transition:transform 0.38s cubic-bezier(0.25,0.46,0.45,0.94);padding:0;}
+    #mobile-menu.open{transform:translateX(0);}
     .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; justify-content: center; background: #25D366; color: #fff; padding: 14px; border-radius: 50%; text-decoration: none; box-shadow: 0 8px 30px rgba(37,211,102,0.35); transition: background 0.2s, transform 0.2s; }
     .wa-float:hover { background: #1da851; transform: translateY(-2px); }
     .wa-float svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
@@ -84,9 +88,12 @@
     "name": "Imóveis à Venda em Igarapava-SP — Rafaela Requi",
     "url": "https://rafaelarequiimoveis.com.br/imoveis.html",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Casa Residencial — Jardim América, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-1.html" },
-      { "@type": "ListItem", "position": 2, "name": "Casa Alto Padrão — Centro, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-2.html" },
-      { "@type": "ListItem", "position": 3, "name": "Terreno — Bairro Novo, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-3.html" }
+      { "@type": "ListItem", "position": 1, "name": "Casa com Área Gourmet — Porto Feliz, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-1.html" },
+      { "@type": "ListItem", "position": 2, "name": "Casa Alto Padrão — Vila Marilene, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-2.html" },
+      { "@type": "ListItem", "position": 3, "name": "Casa — Jardim Bothânico, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-3.html" },
+      { "@type": "ListItem", "position": 4, "name": "Casa Moderna — Jardim Portinari, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-4.html" },
+      { "@type": "ListItem", "position": 5, "name": "Casa com Terreno Amplo — Kazuto Yatsuda, Igarapava-SP", "url": "https://rafaelarequiimoveis.com.br/imovel-5.html" },
+      { "@type": "ListItem", "position": 6, "name": "Casa Alto Padrão — Condomínio Náutico Águas da Ribalta", "url": "https://rafaelarequiimoveis.com.br/imovel-6.html" }
     ]
   }
   </script>
@@ -196,7 +203,7 @@
 
       <!-- Linha 4: Botão limpar -->
       <div class="flex items-center justify-between pt-1 border-t border-white/5">
-        <span id="result-count" class="text-white/40 text-sm">3 imóveis encontrados</span>
+        <span id="result-count" class="text-white/40 text-sm">6 imóveis encontrados</span>
         <button id="clear-filters" class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 hover:text-gold-dark transition-colors">
           <span class="material-symbols-outlined text-sm">restart_alt</span>
           Limpar filtros
@@ -211,12 +218,12 @@
       <a href="imovel-1.html"
          class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
          data-tipo="casa"
-         data-quartos="3"
-         data-preco="380000"
-         data-area="180">
+         data-quartos="2"
+         data-preco="0"
+         data-area="0">
         <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80&auto=format&fit=crop"
-               alt="Casa residencial à venda Jardim América Igarapava SP"
+          <img src="Imóveis/Imóvel 1/capa.png"
+               alt="Casa com área gourmet à venda Porto Feliz Igarapava SP"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
@@ -226,22 +233,19 @@
         </div>
         <div class="p-6 flex flex-col gap-4">
           <div>
-            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Residencial — Jardim América</h2>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa com Área Gourmet — Porto Feliz</h2>
             <p class="text-white/45 text-sm flex items-center gap-1">
               <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
-              Jardim América · Igarapava, SP
+              Porto Feliz · Igarapava, SP
             </p>
           </div>
-          <!-- Specs -->
           <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">straighten</span> 180 m²</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 3 quartos</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shower</span> 2 banheiros</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_car</span> 2 vagas</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 2 quartos</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">star</span> 1 suíte</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_car</span> Garagem</span>
           </div>
-          <!-- Preço + CTA -->
           <div class="flex items-center justify-between mt-1">
-            <span class="font-serif text-2xl text-gold">R$ 380.000</span>
+            <span class="font-serif text-xl text-gold">Consultar valor</span>
             <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
               Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
             </span>
@@ -253,12 +257,12 @@
       <a href="imovel-2.html"
          class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
          data-tipo="casa"
-         data-quartos="4"
-         data-preco="620000"
-         data-area="280">
+         data-quartos="2"
+         data-preco="0"
+         data-area="0">
         <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80&auto=format&fit=crop"
-               alt="Casa alto padrão à venda Centro Igarapava SP"
+          <img src="Imóveis/Imóvel 2/capa.png"
+               alt="Casa alto padrão à venda Vila Marilene Igarapava SP"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
@@ -268,20 +272,19 @@
         </div>
         <div class="p-6 flex flex-col gap-4">
           <div>
-            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Alto Padrão — Centro</h2>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Alto Padrão — Vila Marilene</h2>
             <p class="text-white/45 text-sm flex items-center gap-1">
               <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
-              Centro · Igarapava, SP
+              Vila Marilene · Igarapava, SP
             </p>
           </div>
           <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">straighten</span> 280 m²</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 4 quartos</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shower</span> 3 banheiros</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_car</span> 3 vagas</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 2 quartos</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">star</span> 1 suíte</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_car</span> Garagem</span>
           </div>
           <div class="flex items-center justify-between mt-1">
-            <span class="font-serif text-2xl text-gold">R$ 620.000</span>
+            <span class="font-serif text-xl text-gold">Consultar valor</span>
             <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
               Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
             </span>
@@ -292,35 +295,151 @@
       <!-- Imóvel 3 -->
       <a href="imovel-3.html"
          class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
-         data-tipo="terreno"
-         data-quartos="0"
-         data-preco="145000"
-         data-area="500">
+         data-tipo="casa"
+         data-quartos="3"
+         data-preco="0"
+         data-area="0">
         <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80&auto=format&fit=crop"
-               alt="Terreno à venda Bairro Novo Igarapava SP"
+          <img src="Imóveis/Imóvel 3/capa.png"
+               alt="Casa à venda Jardim Bothânico Igarapava SP"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
           <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold tracking-[0.1em] uppercase px-3 py-1 flex items-center gap-1">
-            <span class="material-symbols-outlined text-gold text-[13px]">terrain</span> Terreno
+            <span class="material-symbols-outlined text-gold text-[13px]">home</span> Casa
           </div>
         </div>
         <div class="p-6 flex flex-col gap-4">
           <div>
-            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Terreno — Bairro Novo</h2>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa — Jardim Bothânico</h2>
             <p class="text-white/45 text-sm flex items-center gap-1">
               <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
-              Bairro Novo · Igarapava, SP
+              Jardim Bothânico · Igarapava, SP
             </p>
           </div>
           <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">straighten</span> 500 m²</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">width</span> 20 × 25 m</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">terrain</span> Plano</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">home</span> Residencial</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">location_city</span> Bem localizado</span>
           </div>
           <div class="flex items-center justify-between mt-1">
-            <span class="font-serif text-2xl text-gold">R$ 145.000</span>
+            <span class="font-serif text-xl text-gold">Consultar valor</span>
+            <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+              Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Imóvel 4 -->
+      <a href="imovel-4.html"
+         class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
+         data-tipo="casa"
+         data-quartos="2"
+         data-preco="0"
+         data-area="0">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="Imóveis/Imóvel 4/capa.png"
+               alt="Casa moderna à venda Jardim Portinari Igarapava SP"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+          <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold tracking-[0.1em] uppercase px-3 py-1 flex items-center gap-1">
+            <span class="material-symbols-outlined text-gold text-[13px]">home</span> Casa
+          </div>
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <div>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa Moderna — Jardim Portinari</h2>
+            <p class="text-white/45 text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
+              Jardim Portinari · Igarapava, SP
+            </p>
+          </div>
+          <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 2 quartos</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">star</span> 1 suíte</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_car</span> Garagem</span>
+          </div>
+          <div class="flex items-center justify-between mt-1">
+            <span class="font-serif text-xl text-gold">Consultar valor</span>
+            <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+              Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Imóvel 5 -->
+      <a href="imovel-5.html"
+         class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
+         data-tipo="casa"
+         data-quartos="3"
+         data-preco="0"
+         data-area="1932">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="Imóveis/Imóvel 5/capa.png"
+               alt="Casa com terreno amplo à venda Kazuto Yatsuda Igarapava SP"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+          <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold tracking-[0.1em] uppercase px-3 py-1 flex items-center gap-1">
+            <span class="material-symbols-outlined text-gold text-[13px]">home</span> Casa
+          </div>
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <div>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa com Terreno Amplo — Kazuto Yatsuda</h2>
+            <p class="text-white/45 text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
+              Kazuto Yatsuda · Igarapava, SP
+            </p>
+          </div>
+          <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 3 quartos</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">straighten</span> 1.932 m²</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">swap_horiz</span> Permuta</span>
+          </div>
+          <div class="flex items-center justify-between mt-1">
+            <span class="font-serif text-xl text-gold">Consultar valor</span>
+            <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+              Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Imóvel 6 -->
+      <a href="imovel-6.html"
+         class="imovel-card group block bg-surface-2 border border-white/5 hover:border-gold/30 transition-colors duration-300 overflow-hidden"
+         data-tipo="casa"
+         data-quartos="4"
+         data-preco="0"
+         data-area="0">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="Imóveis/Imóvel 6/capa.png"
+               alt="Casa alto padrão à venda Condomínio Náutico Águas da Ribalta"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 bg-gold text-black text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1">À Venda</div>
+          <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold tracking-[0.1em] uppercase px-3 py-1 flex items-center gap-1">
+            <span class="material-symbols-outlined text-gold text-[13px]">home</span> Casa
+          </div>
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <div>
+            <h2 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors duration-200">Casa de Alto Padrão — Cond. Náutico</h2>
+            <p class="text-white/45 text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-gold text-[14px]">location_on</span>
+              Águas da Ribalta · Condomínio Náutico
+            </p>
+          </div>
+          <div class="flex items-center gap-4 text-white/50 text-xs border-t border-white/5 pt-4">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bed</span> 4 quartos</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pool</span> Piscina</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">outdoor_grill</span> Gourmet</span>
+          </div>
+          <div class="flex items-center justify-between mt-1">
+            <span class="font-serif text-xl text-gold">Consultar valor</span>
             <span class="text-gold text-[11px] font-semibold tracking-[0.1em] uppercase flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
               Ver detalhes <span class="material-symbols-outlined text-sm">arrow_forward</span>
             </span>
@@ -381,9 +500,16 @@
 
 <script>
   // --- Hamburger ---
-  document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('mobile-menu').classList.toggle('open');
-  });
+  (function(){
+    var hamburger = document.getElementById('hamburger');
+    var menu = document.getElementById('mobile-menu');
+    var overlay = document.getElementById('drawer-overlay');
+    function openDrawer(){menu.classList.add('open');overlay.classList.add('open');document.body.style.overflow='hidden';}
+    function closeDrawer(){menu.classList.remove('open');overlay.classList.remove('open');document.body.style.overflow='';}
+    hamburger.addEventListener('click',openDrawer);
+    overlay.addEventListener('click',closeDrawer);
+    document.getElementById('drawer-close').addEventListener('click',closeDrawer);
+  })();
 
   // --- Filtros ---
   const cards = document.querySelectorAll('.imovel-card');
@@ -411,7 +537,7 @@
       else if (activeFilters.quartos === '3')  quartosOk = quartos === 3;
       else if (activeFilters.quartos === '4')  quartosOk = quartos >= 4;
 
-      const precoOk = preco <= activeFilters.preco;
+      const precoOk = preco === 0 || preco <= activeFilters.preco;
       const areaOk  = area >= activeFilters.area;
 
       const show = tipoOk && quartosOk && precoOk && areaOk;
@@ -480,5 +606,31 @@
   // Inicializa contagem
   applyFilters();
 </script>
+
+<!-- Drawer Overlay -->
+<div id="drawer-overlay"></div>
+
+<!-- Mobile Drawer Menu -->
+<div id="mobile-menu">
+  <div class="flex items-center justify-between px-7 py-6 border-b border-white/8">
+    <img src="logo_rafaela.png" alt="Rafaela Requi" class="h-10 w-auto object-contain opacity-90" />
+    <button id="drawer-close" class="text-white/50 hover:text-white transition-colors" aria-label="Fechar menu">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+  </div>
+  <nav class="flex flex-col px-7 py-8 gap-1 flex-1">
+    <a href="index.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">InÃ­cio</a>
+    <a href="sobre.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">Sobre</a>
+    <a href="servicos.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">ServiÃ§os</a>
+    <a href="imoveis.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">ImÃ³veis</a>
+    <a href="contato.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold transition-colors duration-200">Contato</a>
+  </nav>
+  <div class="px-7 pb-8">
+    <a href="https://wa.me/5516999999999?text=Ol%C3%A1%20Rafaela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20im%C3%B3veis." target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.12em] uppercase px-6 py-4 hover:bg-gold-dark transition-colors duration-200 w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 fill-black"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.41A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 0 1-4.073-1.115l-.292-.174-3.024.857.87-2.944-.19-.303A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.406-5.843c-.242-.121-1.432-.706-1.653-.787-.221-.08-.382-.12-.543.12-.16.242-.622.787-.763.948-.14.16-.281.18-.523.06-.242-.12-1.021-.376-1.944-1.199-.718-.64-1.203-1.43-1.344-1.672-.14-.242-.015-.373.106-.493.108-.108.242-.281.362-.422.121-.14.161-.24.242-.402.08-.16.04-.301-.02-.422-.06-.12-.543-1.309-.744-1.793-.196-.472-.395-.408-.543-.416l-.462-.008c-.16 0-.422.06-.643.301-.221.24-.844.825-.844 2.012 0 1.186.864 2.333.984 2.494.12.16 1.701 2.596 4.122 3.64.576.249 1.025.397 1.375.508.578.184 1.104.158 1.52.096.464-.069 1.432-.585 1.633-1.15.2-.564.2-1.047.14-1.148-.06-.1-.221-.16-.462-.281z"/></svg>
+      Falar no WhatsApp
+    </a>
+  </div>
+</div>
 </body>
 </html>

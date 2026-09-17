@@ -1,303 +1,291 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Casa Residencial Jardim América — À Venda em Igarapava-SP | Rafaela Requi Imóveis</title>
-  <meta name="description" content="Casa residencial à venda no Jardim América, Igarapava-SP. 3 quartos, 180 m², R$ 380.000. Atendimento com Rafaela Requi, corretora CRECI-SP. Fale no WhatsApp." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://rafaelarequiimoveis.com.br/imovel-1.html" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Casa Porto Feliz | Rafaela Requi Im&oacute;veis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: { "gold": "#c5a059", "gold-dark": "#a8853e", "surface-2": "#1a1a1a" },
-          fontFamily: { serif: ["Bodoni Moda","serif"], sans: ["Hanken Grotesk","sans-serif"] },
-          maxWidth: { site: "1440px" },
-        }
-      }
-    }
-  </script>
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{"gold":"#c5a059","gold-dark":"#a8853e"},fontFamily:{serif:["Bodoni Moda","serif"],sans:["Hanken Grotesk","sans-serif"]},maxWidth:{site:"1440px"}}}}</script>
   <style>
-    * { box-sizing: border-box; }
-    body { background: #0a0a0a; color: #fff; font-family: "Hanken Grotesk", sans-serif; overflow-x: hidden; }
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; font-family: 'Material Symbols Outlined'; }
-    #mobile-menu { display: none; }
-    #mobile-menu.open { display: flex; }
-    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; justify-content: center; background: #25D366; color: #fff; padding: 14px; border-radius: 50%; text-decoration: none; box-shadow: 0 8px 30px rgba(37,211,102,0.35); transition: background 0.2s, transform 0.2s; }
-    .wa-float:hover { background: #1da851; transform: translateY(-2px); }
-    .wa-float svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
+    *{box-sizing:border-box;}
+    body{background:#0a0a0a;color:#fff;font-family:"Hanken Grotesk",sans-serif;overflow-x:hidden;}
+    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;font-family:'Material Symbols Outlined';}
+    #mobile-menu{display:none;}#mobile-menu.open{display:flex;}
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:900;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;padding:14px;border-radius:50%;text-decoration:none;box-shadow:0 8px 30px rgba(37,211,102,0.35);transition:background 0.2s,transform 0.2s;}
+    .wa-float:hover{background:#1da851;transform:translateY(-2px);}
+    .wa-float svg{width:22px;height:22px;fill:#fff;flex-shrink:0;}
+    /* CAROUSEL */
+    #gal-outer{position:relative;overflow:hidden;user-select:none;}
+    #gal-track{display:flex;gap:10px;transition:transform 0.46s cubic-bezier(0.25,0.46,0.45,0.94);will-change:transform;}
+    .gal-slide{flex:0 0 calc(33.333% - 7px);aspect-ratio:16/9;border-radius:14px;overflow:hidden;flex-shrink:0;cursor:pointer;position:relative;}
+    .gal-slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;pointer-events:none;}
+    .gal-slide:hover img{transform:scale(1.04);}
+    .gal-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:10;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.12);color:#fff;cursor:pointer;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,border-color 0.2s;backdrop-filter:blur(6px);}
+    .gal-nav:hover{background:rgba(197,160,89,0.9);border-color:#c5a059;}
+    #gal-prev{left:14px;}#gal-next{right:14px;}
+    #gal-badge{position:absolute;bottom:14px;left:14px;z-index:5;background:rgba(0,0,0,0.72);backdrop-filter:blur(6px);color:#fff;font-size:11px;font-family:"Hanken Grotesk",sans-serif;padding:5px 12px;border-radius:20px;display:flex;align-items:center;gap:6px;pointer-events:none;}
+    #gal-badge .material-symbols-outlined{font-size:16px;color:#c5a059;}
+    @media(max-width:768px){.gal-slide{flex:0 0 calc(80% - 7px);}#gal-prev{left:8px;}#gal-next{right:8px;}}
+    @media(max-width:480px){.gal-slide{flex:0 0 calc(92% - 7px);}}
+    /* LIGHTBOX */
+    #lb{display:none;position:fixed;inset:0;z-index:9999;flex-direction:column;background:rgba(0,0,0,0.95);}
+    #lb.open{display:flex;}
+    #lb-topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 18px;flex-shrink:0;background:rgba(0,0,0,0.5);border-bottom:1px solid rgba(255,255,255,0.06);}
+    #lb-count{color:rgba(255,255,255,0.8);font-size:12px;letter-spacing:0.12em;font-family:"Hanken Grotesk",sans-serif;}
+    #lb-toolbar{display:flex;align-items:center;gap:2px;}
+    .lbt{background:none;border:none;color:rgba(255,255,255,0.65);cursor:pointer;padding:7px 8px;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:color 0.2s,background 0.2s;font-family:"Material Symbols Outlined";font-size:21px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;line-height:1;}
+    .lbt:hover{color:#c5a059;background:rgba(255,255,255,0.07);}
+    .lbt.active{color:#c5a059;}
+    #lb-main{flex:1;display:flex;align-items:center;justify-content:center;position:relative;padding:0 72px;min-height:0;overflow:hidden;}
+    #lb-img{max-width:100%;max-height:100%;object-fit:contain;display:block;transition:transform 0.22s;transform-origin:center center;user-select:none;pointer-events:none;}
+    .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.55);border:none;color:#fff;cursor:pointer;width:50px;height:84px;display:flex;align-items:center;justify-content:center;border-radius:3px;transition:background 0.2s;z-index:5;}
+    .lb-nav:hover{background:rgba(197,160,89,0.85);}
+    #lb-prev-btn{left:10px;}#lb-next-btn{right:10px;}
+    #lb-thumbs{flex-shrink:0;height:86px;background:rgba(0,0,0,0.88);display:flex;align-items:center;gap:5px;padding:0 14px;overflow-x:auto;scrollbar-width:thin;}
+    .lb-th{flex:0 0 90px;height:64px;cursor:pointer;border-radius:3px;overflow:hidden;border:2px solid transparent;transition:border-color 0.2s,opacity 0.2s;opacity:0.48;}
+    .lb-th.on{border-color:#c5a059;opacity:1;}
+    .lb-th img{width:100%;height:100%;object-fit:cover;display:block;}
+    #lb-grid{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,0.97);overflow-y:auto;padding:56px 20px 24px;}
+    #lb-grid.open{display:block;}
+    #lb-grid-hdr{position:fixed;top:0;left:0;right:0;z-index:10001;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,0.9);padding:10px 18px;border-bottom:1px solid rgba(255,255,255,0.06);}
+    #lb-grid-hdr span{color:rgba(255,255,255,0.7);font-size:11px;letter-spacing:0.12em;font-family:"Hanken Grotesk",sans-serif;text-transform:uppercase;}
+    #lb-grid-close{background:none;border:none;color:rgba(255,255,255,0.7);cursor:pointer;font-family:"Material Symbols Outlined";font-size:24px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;line-height:1;padding:4px;}
+    #lb-grid-close:hover{color:#c5a059;}
+    #lb-grid-inner{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:5px;max-width:960px;margin:0 auto;}
+    .lb-gi{aspect-ratio:4/3;overflow:hidden;cursor:pointer;border-radius:3px;border:2px solid transparent;transition:border-color 0.2s;}
+    .lb-gi:hover,.lb-gi.on{border-color:#c5a059;}
+    .lb-gi img{width:100%;height:100%;object-fit:cover;display:block;}
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateListing",
-    "name": "Casa Residencial — Jardim América, Igarapava-SP",
-    "description": "Casa residencial à venda no Jardim América, Igarapava-SP. 3 quartos, 180 m², R$ 380.000.",
-    "url": "https://rafaelarequiimoveis.com.br/imovel-1.html",
-    "offers": { "@type": "Offer", "price": "380000", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Igarapava", "addressRegion": "SP", "addressCountry": "BR" }
-  }
-  </script>
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5">
+<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
   <div class="flex justify-between items-center px-6 md:px-20 py-5 max-w-site mx-auto">
-    <a href="index.html" class="flex items-center gap-4">
-      <img src="logo_rafaela.png" alt="Rafaela Requi Imóveis" class="h-12 w-12 object-contain hidden md:block" />
-      <span class="font-serif text-xl tracking-tight text-white">Rafaela Requi Imóveis</span>
-    </a>
+    <a href="index.html"><img src="logo_rafaela.png" alt="Rafaela Requi Im&oacute;veis" class="h-10 w-auto object-contain"/></a>
     <div class="hidden md:flex items-center gap-8 text-[11px] font-semibold tracking-[0.12em] uppercase">
-      <a href="index.html" class="text-white/60 hover:text-gold transition-colors duration-200">Início</a>
+      <a href="index.html" class="text-white/60 hover:text-gold transition-colors duration-200">In&iacute;cio</a>
       <a href="sobre.html" class="text-white/60 hover:text-gold transition-colors duration-200">Sobre</a>
-      <a href="servicos.html" class="text-white/60 hover:text-gold transition-colors duration-200">Serviços</a>
-      <a href="imoveis.html" class="text-gold border-b border-gold pb-0.5">Imóveis</a>
+      <a href="servicos.html" class="text-white/60 hover:text-gold transition-colors duration-200">Servi&ccedil;os</a>
+      <a href="imoveis.html" class="text-gold border-b border-gold pb-0.5">Im&oacute;veis</a>
       <a href="contato.html" class="text-white/60 hover:text-gold transition-colors duration-200">Contato</a>
     </div>
-    <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20tenho%20interesse%20na%20Casa%20do%20Jardim%20América%20por%20R%24%20380.000." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.12em] uppercase px-6 py-3 hover:bg-gold-dark transition-colors duration-200">
-      Tenho interesse
-    </a>
-    <button id="hamburger" class="md:hidden text-white"><span class="material-symbols-outlined text-2xl">menu</span></button>
+    <a href="https://wa.me/5516994602780?text=Ol%C3%A1 Rafaela, vim pelo site e gostaria de mais informa%C3%A7%C3%B5es sobre im%C3%B3veis." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.12em] uppercase px-6 py-3 hover:bg-gold-dark transition-colors duration-200">Falar no WhatsApp</a>
+    <button id="hamburger" class="md:hidden text-white" aria-label="Menu"><span class="material-symbols-outlined text-2xl">menu</span></button>
   </div>
   <div id="mobile-menu" class="flex-col bg-black border-t border-white/5 px-6 py-6 gap-5 text-[12px] font-semibold tracking-[0.12em] uppercase md:hidden">
-    <a href="index.html" class="text-white/60">Início</a>
+    <a href="index.html" class="text-white/60">In&iacute;cio</a>
     <a href="sobre.html" class="text-white/60">Sobre</a>
-    <a href="servicos.html" class="text-white/60">Serviços</a>
-    <a href="imoveis.html" class="text-gold">Imóveis</a>
+    <a href="servicos.html" class="text-white/60">Servi&ccedil;os</a>
+    <a href="imoveis.html" class="text-gold">Im&oacute;veis</a>
     <a href="contato.html" class="text-white/60">Contato</a>
-    <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20tenho%20interesse%20na%20Casa%20do%20Jardim%20América." target="_blank" rel="noopener" class="inline-block bg-gold text-black px-5 py-3 mt-2">Tenho interesse</a>
+    <a href="https://wa.me/5516994602780?text=Ol%C3%A1 Rafaela, vim pelo site e gostaria de mais informa%C3%A7%C3%B5es sobre im%C3%B3veis." target="_blank" rel="noopener" class="inline-block bg-gold text-black px-5 py-3 mt-2">Falar no WhatsApp</a>
   </div>
 </nav>
 
-<!-- HERO FOTO -->
-<header class="relative pt-20 h-[60vh] min-h-[420px] overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=85&auto=format&fit=crop"
-       alt="Casa residencial à venda Jardim América Igarapava SP"
-       class="w-full h-full object-cover object-center" />
-  <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-black/30 to-transparent"></div>
-  <div class="absolute bottom-8 left-6 md:left-20">
-    <span class="bg-gold text-black text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1 mb-3 inline-block">À Venda</span>
-    <h1 class="font-serif text-3xl md:text-5xl text-white">Casa Residencial — Jardim América</h1>
+<!-- HERO -->
+<div class="pt-28 pb-10 px-6 md:px-20 bg-[#0d0d0d] border-b border-white/5">
+  <div class="max-w-site mx-auto">
+    <div class="flex items-center gap-2 text-white/40 text-xs mb-4">
+      <a href="index.html" class="hover:text-gold">In&iacute;cio</a><span>/</span>
+      <a href="imoveis.html" class="hover:text-gold">Im&oacute;veis</a><span>/</span>
+      <span class="text-white/60">Casa Porto Feliz</span>
+    </div>
+    <span class="bg-gold text-black text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1 mb-3 inline-block">&Agrave; Venda</span>
+    <h1 class="font-serif text-3xl md:text-5xl text-white mt-2">Casa &mdash; Porto Feliz</h1>
+    <p class="text-white/50 mt-3 flex items-center gap-1 text-sm">
+      <span class="material-symbols-outlined text-gold text-base">location_on</span>
+      Porto Feliz &middot; Igarapava, SP
+    </p>
   </div>
-</header>
+</div>
 
-<!-- CONTEÚDO -->
+<!-- CAROUSEL -->
+<div class="bg-[#0a0a0a]">
+  <div id="gal-outer">
+    <div id="gal-track"></div>
+    <button class="gal-nav" id="gal-prev" aria-label="Anterior">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="gal-nav" id="gal-next" aria-label="Pr&oacute;ximo">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div id="gal-badge"><span class="material-symbols-outlined">photo_library</span><span>6 fotos</span></div>
+  </div>
+</div>
+
+<!-- CONTENT -->
 <main class="max-w-site mx-auto px-6 md:px-20 py-16">
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-
-    <!-- Esquerda: detalhes -->
     <div class="lg:col-span-7 flex flex-col gap-10">
-
-      <!-- Breadcrumb -->
-      <div class="flex items-center gap-2 text-white/40 text-xs">
-        <a href="index.html" class="hover:text-gold transition-colors">Início</a>
-        <span>/</span>
-        <span class="text-white/60">Casa Jardim América</span>
-      </div>
-
-      <!-- Info rápida -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5 border border-white/5">
-        <div class="bg-[#0a0a0a] p-5 flex flex-col gap-1">
-          <span class="material-symbols-outlined text-gold text-xl">straighten</span>
-          <span class="text-white font-semibold text-lg">180 m²</span>
-          <span class="text-white/40 text-xs uppercase tracking-wide">Área total</span>
-        </div>
-        <div class="bg-[#0a0a0a] p-5 flex flex-col gap-1">
-          <span class="material-symbols-outlined text-gold text-xl">bed</span>
-          <span class="text-white font-semibold text-lg">3</span>
-          <span class="text-white/40 text-xs uppercase tracking-wide">Quartos</span>
-        </div>
-        <div class="bg-[#0a0a0a] p-5 flex flex-col gap-1">
-          <span class="material-symbols-outlined text-gold text-xl">shower</span>
-          <span class="text-white font-semibold text-lg">2</span>
-          <span class="text-white/40 text-xs uppercase tracking-wide">Banheiros</span>
-        </div>
-        <div class="bg-[#0a0a0a] p-5 flex flex-col gap-1">
-          <span class="material-symbols-outlined text-gold text-xl">directions_car</span>
-          <span class="text-white font-semibold text-lg">2</span>
-          <span class="text-white/40 text-xs uppercase tracking-wide">Vagas</span>
-        </div>
-      </div>
-
-      <!-- Descrição -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5 border border-white/5"><div class="bg-[#0a0a0a] p-5 flex flex-col gap-1"><span class="material-symbols-outlined text-gold text-xl">bed</span><span class="text-white font-semibold text-lg">2</span><span class="text-white/40 text-xs uppercase tracking-wide">Dormit&oacute;rios</span></div><div class="bg-[#0a0a0a] p-5 flex flex-col gap-1"><span class="material-symbols-outlined text-gold text-xl">king_bed</span><span class="text-white font-semibold text-lg">1 Su&iacute;te</span><span class="text-white/40 text-xs uppercase tracking-wide">Su&iacute;te</span></div><div class="bg-[#0a0a0a] p-5 flex flex-col gap-1"><span class="material-symbols-outlined text-gold text-xl">garage</span><span class="text-white font-semibold text-lg">Coberta</span><span class="text-white/40 text-xs uppercase tracking-wide">Garagem</span></div><div class="bg-[#0a0a0a] p-5 flex flex-col gap-1"><span class="material-symbols-outlined text-gold text-xl">outdoor_grill</span><span class="text-white font-semibold text-lg">Sim</span><span class="text-white/40 text-xs uppercase tracking-wide">ãrearea Gourmet</span></div></div>
       <div>
-        <h2 class="font-serif text-2xl text-white mb-4">Sobre o imóvel</h2>
+        <h2 class="font-serif text-2xl text-white mb-4">Sobre o im&oacute;vel</h2>
         <div class="w-8 h-px bg-gold mb-5"></div>
-        <div class="space-y-4 text-white/60 text-base leading-relaxed">
-          <p>
-            Excelente casa residencial localizada no Jardim América, um dos bairros mais tranquilos e valorizados de Igarapava-SP. O imóvel está em ótimo estado de conservação, pronto para morar.
-          </p>
-          <p>
-            A casa conta com ampla sala de estar e jantar integradas, cozinha planejada, área de serviço coberta e quintal espaçoso — ideal para famílias que buscam conforto, privacidade e uma boa localização na cidade.
-          </p>
-          <p>
-            Próximo a escolas, supermercados, farmácias e fácil acesso às principais vias de Igarapava. Ótima oportunidade para quem busca qualidade de vida com excelente custo-benefício.
-          </p>
-        </div>
+        <div class="space-y-4 text-white/60 text-base leading-relaxed"><p>Casa aconchegante e bem localizada no Porto Feliz, Igarapava-SP. Com 2 dormit&oacute;rios sendo 1 su&iacute;te, o im&oacute;vel oferece conforto para fam&iacute;lias que buscam qualidade de vida.</p><p>Garagem coberta, &aacute;rea gourmet e acabamentos cuidadosos tornam este im&oacute;vel uma excelente oportunidade.</p></div>
       </div>
-
-      <!-- Características -->
       <div>
-        <h2 class="font-serif text-2xl text-white mb-4">Características</h2>
+        <h2 class="font-serif text-2xl text-white mb-4">Caracter&iacute;sticas</h2>
         <div class="w-8 h-px bg-gold mb-5"></div>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> 3 quartos sendo 1 suíte</li>
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> Sala de estar e jantar ampla</li>
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> Cozinha planejada</li>
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> Área de serviço coberta</li>
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> Quintal amplo</li>
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> 2 vagas de garagem cobertas</li>
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> Churrasqueira</li>
-          <li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span> Ótimo estado de conservação</li>
-        </ul>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3"><li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>2 dormit&oacute;rios (1 su&iacute;te)</li><li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>Garagem coberta</li><li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>&Aacute;rea gourmet</li><li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>Acabamento de qualidade</li><li class="flex items-center gap-3 text-white/60 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>Porto Feliz &mdash; &oacute;tima localiza&ccedil;&atilde;o</li></ul>
       </div>
-
-      <!-- Localização -->
       <div>
-        <h2 class="font-serif text-2xl text-white mb-4">Localização</h2>
+        <h2 class="font-serif text-2xl text-white mb-4">Localiza&ccedil;&atilde;o</h2>
         <div class="w-8 h-px bg-gold mb-5"></div>
-        <p class="text-white/60 text-sm mb-4 flex items-center gap-2">
-          <span class="material-symbols-outlined text-gold text-base">location_on</span>
-          Jardim América — Igarapava, SP
-        </p>
-        <div class="w-full h-52 border border-white/5 overflow-hidden">
-          <iframe title="Jardim América, Igarapava-SP"
-            src="https://maps.google.com/maps?q=Jardim+América,+Igarapava,+SP&z=14&output=embed"
-            width="100%" height="100%" frameborder="0"
-            style="border:0; filter: grayscale(100%) invert(90%) contrast(85%);"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <p class="text-white/60 text-sm mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">location_on</span> Porto Feliz, Igarapava, SP</p>
+        <div class="w-full h-52 border border-white/5 overflow-hidden rounded-lg">
+          <iframe title="Igarapava-SP" src="https://maps.google.com/maps?q=Igarapava,+SP&z=13&output=embed" width="100%" height="100%" frameborder="0" style="border:0;filter:grayscale(100%) invert(90%) contrast(85%);" loading="lazy"></iframe>
         </div>
       </div>
     </div>
-
-    <!-- Direita: card de conversão -->
     <div class="lg:col-span-5 lg:col-start-8">
       <div class="sticky top-28 bg-white/[0.03] border border-white/8 p-8 flex flex-col gap-6">
-
-        <div>
-          <span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase block mb-1">Valor</span>
-          <span class="font-serif text-4xl text-white">R$ 380.000</span>
-        </div>
-
+        <div><span class="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase block mb-1">Valor</span><span class="font-serif text-3xl text-white">Consultar</span></div>
         <div class="w-full h-px bg-white/8"></div>
-
-        <div class="space-y-3 text-sm">
-          <div class="flex justify-between">
-            <span class="text-white/40">Tipo</span>
-            <span class="text-white">Casa residencial</span>
-          </div>
-          <div class="flex justify-between">
-            <span class="text-white/40">Bairro</span>
-            <span class="text-white">Jardim América</span>
-          </div>
-          <div class="flex justify-between">
-            <span class="text-white/40">Cidade</span>
-            <span class="text-white">Igarapava, SP</span>
-          </div>
-          <div class="flex justify-between">
-            <span class="text-white/40">Área</span>
-            <span class="text-white">180 m²</span>
-          </div>
-          <div class="flex justify-between">
-            <span class="text-white/40">Quartos</span>
-            <span class="text-white">3 (sendo 1 suíte)</span>
-          </div>
-          <div class="flex justify-between">
-            <span class="text-white/40">Status</span>
-            <span class="text-gold font-semibold">Disponível</span>
-          </div>
-        </div>
-
+        <div class="space-y-3 text-sm"><div class="flex justify-between"><span class="text-white/40">Dormit&oacute;rios</span><span class="text-white">2 (1 su&iacute;te)</span></div><div class="flex justify-between"><span class="text-white/40">Bairro</span><span class="text-white">Porto Feliz</span></div><div class="flex justify-between"><span class="text-white/40">Cidade</span><span class="text-white">Igarapava, SP</span></div><div class="flex justify-between"><span class="text-white/40">Status</span><span class="text-gold font-semibold">Dispon&iacute;vel</span></div></div>
         <div class="w-full h-px bg-white/8"></div>
-
-        <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20tenho%20interesse%20na%20Casa%20do%20Jardim%20América%20em%20Igarapava%2C%20por%20R%24%20380.000.%20Podemos%20conversar%3F"
-           target="_blank" rel="noopener"
-           class="w-full inline-flex items-center justify-center gap-3 bg-gold text-black text-[11px] font-semibold tracking-[0.15em] uppercase py-4 hover:bg-gold-dark transition-colors duration-200">
+        <a href="https://wa.me/5516994602780?text=Ol%C3%A1 Rafaela, tenho interesse na casa do Porto Feliz em Igarapava. Podemos conversar?" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-3 bg-gold text-black text-[11px] font-semibold tracking-[0.15em] uppercase py-4 hover:bg-gold-dark transition-colors">
           <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.529 5.843L.057 23.776a.5.5 0 00.609.63l6.101-1.597A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.956 9.956 0 01-5.121-1.408l-.367-.218-3.802.996.998-3.702-.24-.383A9.965 9.965 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Quero este imóvel
+          Quero este im&oacute;vel
         </a>
-
-        <a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20quero%20agendar%20uma%20visita%20à%20Casa%20do%20Jardim%20América%20em%20Igarapava."
-           target="_blank" rel="noopener"
-           class="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold text-[11px] font-semibold tracking-[0.15em] uppercase py-4 hover:bg-gold/10 transition-colors duration-200">
-          Agendar visita
-        </a>
-
-        <p class="text-white/30 text-xs text-center leading-relaxed">
-          Atendimento direto com Rafaela Requi · CRECI-SP
-        </p>
+        <a href="https://wa.me/5516994602780?text=Ol%C3%A1 Rafaela, quero agendar uma visita %C3%A0 casa do Porto Feliz." target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold text-[11px] font-semibold tracking-[0.15em] uppercase py-4 hover:bg-gold/10 transition-colors">Agendar visita</a>
+        <p class="text-white/30 text-xs text-center">Atendimento direto com Rafaela Requi &middot; CRECI-SP</p>
       </div>
     </div>
-
   </div>
-
-  <!-- Outros imóveis -->
   <div class="mt-24 pt-16 border-t border-white/5">
-    <h2 class="font-serif text-2xl text-white mb-8">Outros imóveis disponíveis</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <a href="imovel-2.html" class="group block relative overflow-hidden">
-        <div class="relative aspect-[16/9] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80&auto=format&fit=crop"
-               alt="Casa alto padrão à venda Igarapava SP"
-               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5">
-            <h3 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors">Casa Alto Padrão — Centro</h3>
-            <span class="text-gold font-serif text-lg">R$ 620.000</span>
-          </div>
-        </div>
-      </a>
-      <a href="imovel-3.html" class="group block relative overflow-hidden">
-        <div class="relative aspect-[16/9] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80&auto=format&fit=crop"
-               alt="Terreno à venda Igarapava SP"
-               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5">
-            <h3 class="font-serif text-xl text-white mb-1 group-hover:text-gold transition-colors">Terreno — Bairro Novo</h3>
-            <span class="text-gold font-serif text-lg">R$ 145.000</span>
-          </div>
-        </div>
-      </a>
-    </div>
+    <h2 class="font-serif text-2xl text-white mb-8">Outros im&oacute;veis dispon&iacute;veis</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6"><a href="imovel-2.html" class="group block overflow-hidden rounded-lg"><div class="relative aspect-[16/9] overflow-hidden rounded-lg"><img src="Imóveis/Imóvel 2/capa.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-5"><h3 class="font-serif text-lg text-white mb-1 group-hover:text-gold transition-colors">Casa &mdash; Vila Marilene</h3><span class="text-gold text-xs font-semibold tracking-wide uppercase">Consultar valor</span></div></div></a><a href="imovel-4.html" class="group block overflow-hidden rounded-lg"><div class="relative aspect-[16/9] overflow-hidden rounded-lg"><img src="Imóveis/Imóvel 4/capa.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-5"><h3 class="font-serif text-lg text-white mb-1 group-hover:text-gold transition-colors">Casa Moderna &mdash; Jardim Portinari</h3><span class="text-gold text-xs font-semibold tracking-wide uppercase">Consultar valor</span></div></div></a><a href="imovel-6.html" class="group block overflow-hidden rounded-lg"><div class="relative aspect-[16/9] overflow-hidden rounded-lg"><img src="Imóveis/Imóvel 6/capa.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-5"><h3 class="font-serif text-lg text-white mb-1 group-hover:text-gold transition-colors">Casa de Alto Padr&atilde;o &mdash; Cond. N&aacute;utico</h3><span class="text-gold text-xs font-semibold tracking-wide uppercase">Consultar valor</span></div></div></a></div>
   </div>
 </main>
 
-<!-- FOOTER -->
 <footer class="bg-black border-t border-white/5 py-16 px-6 md:px-20 mt-16">
   <div class="max-w-site mx-auto flex flex-col items-center text-center gap-8">
-    <img src="logo_rafaela.png" alt="Rafaela Requi Imóveis" class="h-12 w-auto object-contain opacity-80" />
+    <img src="logo_rafaela.png" alt="Rafaela Requi Im&oacute;veis" class="h-12 w-auto object-contain opacity-80"/>
     <div class="flex flex-wrap justify-center gap-6 text-[11px] font-semibold tracking-[0.1em] uppercase text-white/40">
-      <a href="index.html" class="hover:text-gold transition-colors">Início</a>
-      <a href="sobre.html" class="hover:text-gold transition-colors">Sobre</a>
-      <a href="servicos.html" class="hover:text-gold transition-colors">Serviços</a>
+      <a href="index.html" class="hover:text-gold transition-colors">In&iacute;cio</a>
+      <a href="imoveis.html" class="hover:text-gold transition-colors">Im&oacute;veis</a>
       <a href="contato.html" class="hover:text-gold transition-colors">Contato</a>
-      <a href="https://wa.me/5516999999999" target="_blank" rel="noopener" class="hover:text-gold transition-colors">WhatsApp</a>
     </div>
-    <p class="text-white/25 text-xs">Rafaela Requi Imóveis — Igarapava, SP · CRECI-SP<br/>© 2025 Todos os direitos reservados.</p>
+    <p class="text-white/25 text-xs">Rafaela Requi Im&oacute;veis &mdash; Igarapava, SP &middot; CRECI-SP<br/>&#169; 2025 Todos os direitos reservados.</p>
   </div>
 </footer>
 
-<a href="https://wa.me/5516999999999?text=Olá%20Rafaela%2C%20tenho%20interesse%20na%20Casa%20do%20Jardim%20América." target="_blank" rel="noopener" class="wa-float">
+<div id="lb">
+  <div id="lb-topbar">
+    <span id="lb-count">1 / 6</span>
+    <div id="lb-toolbar">
+      <button class="lbt" id="lbt-zin">zoom_in</button>
+      <button class="lbt" id="lbt-zout">zoom_out</button>
+      <button class="lbt" id="lbt-play">play_arrow</button>
+      <button class="lbt" id="lbt-fs">fullscreen</button>
+      <button class="lbt" id="lbt-grid">grid_view</button>
+      <button class="lbt" id="lbt-close">close</button>
+    </div>
+  </div>
+  <div id="lb-main">
+    <button class="lb-nav" id="lb-prev-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <img id="lb-img" src="" alt=""/>
+    <button class="lb-nav" id="lb-next-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+  </div>
+  <div id="lb-thumbs"></div>
+</div>
+<div id="lb-grid">
+  <div id="lb-grid-hdr"><span>Todas as fotos</span><button id="lb-grid-close">close</button></div>
+  <div id="lb-grid-inner"></div>
+</div>
+
+<a href="https://wa.me/5516994602780?text=Ol%C3%A1 Rafaela, tenho interesse na casa do Porto Feliz." target="_blank" rel="noopener" class="wa-float">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.529 5.843L.057 23.776a.5.5 0 00.609.63l6.101-1.597A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.956 9.956 0 01-5.121-1.408l-.367-.218-3.802.996.998-3.702-.24-.383A9.965 9.965 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
 </a>
 
 <script>
-  document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('mobile-menu').classList.toggle('open');
+document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('open');});
+(function(){
+  var imgs=['Imóveis/Imóvel 1/capa.png','Imóveis/Imóvel 1/Captura de tela 2026-06-07 201034.png','Imóveis/Imóvel 1/Captura de tela 2026-06-07 201046.png','Imóveis/Imóvel 1/Captura de tela 2026-06-07 201057.png','Imóveis/Imóvel 1/Captura de tela 2026-06-07 201111.png','Imóveis/Imóvel 1/Captura de tela 2026-06-07 201123.png'];
+  var VISIBLE=3,cur=0,lbCur=0,zoom=1,playing=false,ssTimer=null;
+  var track=document.getElementById('gal-track');
+  var all=[];
+  for(var i=imgs.length-VISIBLE;i<imgs.length;i++)all.push(imgs[i]);
+  for(var i=0;i<imgs.length;i++)all.push(imgs[i]);
+  for(var i=0;i<VISIBLE;i++)all.push(imgs[i]);
+  all.forEach(function(src,idx){
+    var s=document.createElement('div');s.className='gal-slide';
+    var img=document.createElement('img');img.src=src;img.alt='Foto';img.loading=idx<6?'eager':'lazy';
+    s.appendChild(img);
+    s.addEventListener('click',function(){openLB((idx-VISIBLE+imgs.length*100)%imgs.length);});
+    track.appendChild(s);
   });
+  function sw(){var sl=track.querySelector('.gal-slide');return sl?sl.offsetWidth+10:0;}
+  function setPos(a){track.style.transition=a?'transform 0.46s cubic-bezier(0.25,0.46,0.45,0.94)':'none';track.style.transform='translateX(-'+((VISIBLE+cur)*sw())+'px)';}
+  function goTo(n){cur=n;setPos(true);}
+  track.addEventListener('transitionend',function(){if(cur<0){cur+=imgs.length;setPos(false);}else if(cur>=imgs.length){cur-=imgs.length;setPos(false);}});
+  setPos(false);
+  document.getElementById('gal-next').addEventListener('click',function(){goTo(cur+1);});
+  document.getElementById('gal-prev').addEventListener('click',function(){goTo(cur-1);});
+  var sx=0,drag=false;
+  var outer=document.getElementById('gal-outer');
+  outer.addEventListener('mousedown',function(e){sx=e.clientX;drag=true;});
+  window.addEventListener('mouseup',function(e){if(!drag)return;drag=false;var dx=e.clientX-sx;if(Math.abs(dx)>50)goTo(dx<0?cur+1:cur-1);});
+  outer.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+  outer.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)goTo(dx<0?cur+1:cur-1);},{passive:true});
+  window.addEventListener('resize',function(){setPos(false);});
+  var lbImg=document.getElementById('lb-img'),lbCount=document.getElementById('lb-count');
+  var lbThumbs=document.getElementById('lb-thumbs'),lbGrid=document.getElementById('lb-grid'),lbGI=document.getElementById('lb-grid-inner');
+  var ths=[],gis=[];
+  imgs.forEach(function(src,i){
+    var th=document.createElement('div');th.className='lb-th';var ti=document.createElement('img');ti.src=src;ti.loading='lazy';th.appendChild(ti);th.addEventListener('click',function(){lbGoTo(i);});lbThumbs.appendChild(th);ths.push(th);
+    var gi=document.createElement('div');gi.className='lb-gi';var gimg=document.createElement('img');gimg.src=src;gimg.loading='lazy';gi.appendChild(gimg);gi.addEventListener('click',function(){lbGrid.classList.remove('open');lbGoTo(i);});lbGI.appendChild(gi);gis.push(gi);
+  });
+  function lbGoTo(n){lbCur=(n+imgs.length)%imgs.length;lbImg.src=imgs[lbCur];lbCount.textContent=(lbCur+1)+' / '+imgs.length;zoom=1;lbImg.style.transform='scale(1)';ths.forEach(function(t,i){t.classList.toggle('on',i===lbCur);});gis.forEach(function(g,i){g.classList.toggle('on',i===lbCur);});var at=ths[lbCur];if(at)lbThumbs.scrollLeft=at.offsetLeft-lbThumbs.offsetWidth/2+at.offsetWidth/2;}
+  function openLB(i){document.getElementById('lb').classList.add('open');document.body.style.overflow='hidden';lbGoTo(i);}
+  function closeLB(){document.getElementById('lb').classList.remove('open');lbGrid.classList.remove('open');document.body.style.overflow='';stopSS();}
+  function startSS(){playing=true;document.getElementById('lbt-play').classList.add('active');ssTimer=setInterval(function(){lbGoTo(lbCur+1);},3000);}
+  function stopSS(){playing=false;document.getElementById('lbt-play').classList.remove('active');clearInterval(ssTimer);}
+  document.getElementById('lb-prev-btn').addEventListener('click',function(){lbGoTo(lbCur-1);});
+  document.getElementById('lb-next-btn').addEventListener('click',function(){lbGoTo(lbCur+1);});
+  document.getElementById('lbt-close').addEventListener('click',closeLB);
+  document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLB();});
+  document.getElementById('lbt-zin').addEventListener('click',function(){zoom=Math.min(zoom+0.35,4);lbImg.style.transform='scale('+zoom+')';});
+  document.getElementById('lbt-zout').addEventListener('click',function(){zoom=Math.max(zoom-0.35,0.5);lbImg.style.transform='scale('+zoom+')';});
+  document.getElementById('lbt-play').addEventListener('click',function(){playing?stopSS():startSS();});
+  document.getElementById('lbt-fs').addEventListener('click',function(){var lb=document.getElementById('lb');document.fullscreenElement?document.exitFullscreen():lb.requestFullscreen&&lb.requestFullscreen();});
+  document.getElementById('lbt-grid').addEventListener('click',function(){lbGrid.classList.toggle('open');});
+  document.getElementById('lb-grid-close').addEventListener('click',function(){lbGrid.classList.remove('open');});
+  document.addEventListener('keydown',function(e){var lb=document.getElementById('lb');if(!lb.classList.contains('open'))return;if(e.key==='Escape'){lbGrid.classList.contains('open')?lbGrid.classList.remove('open'):closeLB();}if(e.key==='ArrowLeft')lbGoTo(lbCur-1);if(e.key==='ArrowRight')lbGoTo(lbCur+1);});
+  var lbX=0;
+  document.getElementById('lb-main').addEventListener('touchstart',function(e){lbX=e.touches[0].clientX;},{passive:true});
+  document.getElementById('lb-main').addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-lbX;if(Math.abs(dx)>40)lbGoTo(dx<0?lbCur+1:lbCur-1);},{passive:true});
+})();
 </script>
+
+<!-- Drawer Overlay -->
+<div id="drawer-overlay"></div>
+
+<!-- Mobile Drawer Menu -->
+<div id="mobile-menu">
+  <div class="flex items-center justify-between px-7 py-6 border-b border-white/8">
+    <img src="logo_rafaela.png" alt="Rafaela Requi" class="h-10 w-auto object-contain opacity-90" />
+    <button id="drawer-close" class="text-white/50 hover:text-white transition-colors" aria-label="Fechar menu">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+  </div>
+  <nav class="flex flex-col px-7 py-8 gap-1 flex-1">
+    <a href="index.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">InÃ­cio</a>
+    <a href="sobre.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">Sobre</a>
+    <a href="servicos.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">ServiÃ§os</a>
+    <a href="imoveis.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold border-b border-white/5 transition-colors duration-200">ImÃ³veis</a>
+    <a href="contato.html" class="py-3 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/55 hover:text-gold transition-colors duration-200">Contato</a>
+  </nav>
+  <div class="px-7 pb-8">
+    <a href="https://wa.me/5516999999999?text=Ol%C3%A1%20Rafaela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20im%C3%B3veis." target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-gold text-black text-[11px] font-semibold tracking-[0.12em] uppercase px-6 py-4 hover:bg-gold-dark transition-colors duration-200 w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 fill-black"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.41A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 0 1-4.073-1.115l-.292-.174-3.024.857.87-2.944-.19-.303A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.406-5.843c-.242-.121-1.432-.706-1.653-.787-.221-.08-.382-.12-.543.12-.16.242-.622.787-.763.948-.14.16-.281.18-.523.06-.242-.12-1.021-.376-1.944-1.199-.718-.64-1.203-1.43-1.344-1.672-.14-.242-.015-.373.106-.493.108-.108.242-.281.362-.422.121-.14.161-.24.242-.402.08-.16.04-.301-.02-.422-.06-.12-.543-1.309-.744-1.793-.196-.472-.395-.408-.543-.416l-.462-.008c-.16 0-.422.06-.643.301-.221.24-.844.825-.844 2.012 0 1.186.864 2.333.984 2.494.12.16 1.701 2.596 4.122 3.64.576.249 1.025.397 1.375.508.578.184 1.104.158 1.52.096.464-.069 1.432-.585 1.633-1.15.2-.564.2-1.047.14-1.148-.06-.1-.221-.16-.462-.281z"/></svg>
+      Falar no WhatsApp
+    </a>
+  </div>
+</div>
 </body>
 </html>
